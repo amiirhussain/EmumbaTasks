@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>align items</title>
+    <!-- 
+      Align Items: used to align items vertical axis
+
+      There are several option for flex items in the cross axis.
+
+      1) flex-start: align item at start(top) of the container
+      2) flex-end : align flex items at the end(bottom) of the container
+      3) center : align flex items at the center vertically
+      4) stretch : tretch the items to fill the flex container
+      5) baseline : align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit on.
+     -->
+
+    <style>
+      #box-container {
+        background: gray;
+        display: flex;
+        height: 500px;
+
+        /* align flex items at the center vertically  */
+        align-items: center;
+      }
+      #box-1 {
+        background-color: dodgerblue;
+        width: 200px;
+        font-size: 24px;
+      }
+
+      #box-2 {
+        background-color: orangered;
+        width: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <div id="box-1"><p>Hello</p></div>
+      <div id="box-2"><p>Goodbye</p></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>justify-content</title>
+    <!-- 
+      Justify content: used to align items horizontally
+
+      There are several option for flex items in the main axis.
+
+      1) flex-start: align item at start of the container
+      2) flex-end : align flex items at the end of the container
+      3) center : align flex items at the center 
+      4) space-between : equal space between elements
+      5) space-around: equal space around each element
+      6) space-evenly : includes space from borders
+     -->
+    <style>
+      #box-container {
+        background: gray;
+        display: flex;
+        height: 500px;
+
+        /* it align all the flex items to the center in flex container */
+        justify-content: center;
+      }
+      #box-1 {
+        background-color: dodgerblue;
+        width: 25%;
+        height: 100%;
+      }
+
+      #box-2 {
+        background-color: orangered;
+        width: 25%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <div id="box-1"></div>
+      <div id="box-2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>flex wrap</title>
+    <!-- 
+      flex wrap: it wrap the flex items. This means extra items move into a new row or column.
+
+      There are several option for flex items in the flex wrap.
+
+      1) nowrap: this is the default setting, and does not wrap items
+      2) wrap : wraps items onto multiple lines from top-to-bottom if they are in rows and left-to-right if they are in columns
+      3) wrap-reverse : wraps items onto multiple lines from bottom-to-top.
+   
+     -->
+
+    <style>
+      #box-container {
+        background: gray;
+        display: flex;
+        height: 100%;
+
+        /* wraps items onto multiple lines from top-to-bottom in row */
+        flex-wrap: wrap;
+      }
+      #box-1 {
+        background-color: dodgerblue;
+        width: 25%;
+        height: 50%;
+      }
+
+      #box-2 {
+        background-color: orangered;
+        width: 25%;
+        height: 50%;
+      }
+      #box-3 {
+        background-color: violet;
+        width: 25%;
+        height: 50%;
+      }
+      #box-4 {
+        background-color: yellow;
+        width: 25%;
+        height: 50%;
+      }
+      #box-5 {
+        background-color: green;
+        width: 25%;
+        height: 50%;
+      }
+      #box-6 {
+        background-color: black;
+        width: 25%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <div id="box-1"></div>
+      <div id="box-2"></div>
+      <div id="box-3"></div>
+      <div id="box-4"></div>
+      <div id="box-5"></div>
+      <div id="box-6"></div>
+    </div>
+  </body>
+</html>
