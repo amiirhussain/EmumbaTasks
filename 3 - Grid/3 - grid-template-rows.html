@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Template rows</title>
+
+    <!-- 
+      Grid Template rows: It indicates the number of row in the grid, and the value of each parameter indicates the width of each row.
+     -->
+
+    <style>
+      .d1 {
+        background: LightSkyBlue;
+      }
+      .d2 {
+        background: LightSalmon;
+      }
+      .d3 {
+        background: PaleTurquoise;
+      }
+      .d4 {
+        background: LightPink;
+      }
+      .d5 {
+        background: PaleGreen;
+      }
+
+      .container {
+        font-size: 40px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+        grid-template-columns: 100px 100px;
+
+        /* 2 row with a width of 50px  */
+        grid-template-rows: 100px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+  </body>
+</html>

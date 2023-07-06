@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Units</title>
+
+    <!-- 
+      Grid units: We can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns. 
+      
+      we can use these as well:
+
+      1) fr: it set the column or row to a fraction of the available space,
+
+      2) auto: it sets the column or row to the width or height of its content automatically,
+
+      3) %: it adjust the column or row to the percent width of its container.
+     -->
+
+    <style>
+      .d1 {
+        background: LightSkyBlue;
+      }
+      .d2 {
+        background: LightSalmon;
+      }
+      .d3 {
+        background: PaleTurquoise;
+      }
+      .d4 {
+        background: LightPink;
+      }
+      .d5 {
+        background: PaleGreen;
+      }
+
+      .container {
+        font-size: 40px;
+        width: 100%;
+        background: LightGray;
+        display: grid;
+
+        /* Column 1 width is 1fr,  2nd colum width is 100px and 3rd column width is 2fr */
+        grid-template-columns: 1fr 100px 2fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+  </body>
+</html>
